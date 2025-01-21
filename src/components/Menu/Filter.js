@@ -2,11 +2,11 @@ const Filter=({categoryList,selectedDish,setCategory})=>{
     const handleOnChangeCategory=(e)=>{
         setCategory(e.target.value);
     }
-    return <div>
+    return <div className="filter-container">
         {
             categoryList.map(category=>{
                 return(
-                    <div className="filter-container">
+                    <div>
                         <input
                             id={category}
                             type="radio"
