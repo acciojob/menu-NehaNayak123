@@ -1,0 +1,62 @@
+.menu-container{
+    margin: 2rem;
+    background-color: rgb(197, 192, 192);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        text-decoration: underline orange 2px;
+        margin-bottom: 10px;
+    }
+    .filter-container{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+
+        input{
+            display: none;
+        }
+        label{
+            background-color: white;
+            margin: 3px;
+            padding: 3px;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        input:checked +label{
+            background-color: rgb(144, 133, 133);
+        }
+        input+label:hover{
+            background-color: rgb(231, 226, 226);
+        }
+    }
+    .dish-container{
+        display: flex;
+        /* grid-template-columns: 1fr, 1fr; */
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        flex-wrap: wrap;
+        .dish-card{
+            display: flex;
+            gap: 10px;
+            padding: 1rem;
+            box-shadow: 1px 1px 10px red;
+            width: 45%;
+            img{
+                height: 150px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .titlePrice{
+        display: flex;
+        justify-content: space-between;
+    }
+}
